@@ -14,7 +14,7 @@ const Footer = () => {
     <>
    
 
-<div className=' mt-10 flex lg:gap-24 md:gap-16 sm:gap-10 gap-4 bg-[#221957] pt-10 pb-10'>
+<div className=' mt-10 flex lg:gap-24 md:gap-16 sm:gap-10 gap-2 bg-[#221957] pt-10 pb-10'>
  {/* footer part-1 */}
  <div className='ml-2 sm:ml-10'>
      <img src={""} className='w-[15%]'></img>
@@ -35,16 +35,16 @@ const Footer = () => {
  </div>
 
  {/* footer part-2 */}
- <div className='flex flex-col sm:gap-4 gap-1 md:ml-14 sm:ml-5 -ml-5'>
-     <p className='text-white sm:text-[1.25rem] text-[0.9rem]'>Our Services</p>
+ <div className='flex flex-col sm:gap-4 gap-1 md:ml-14 sm:ml-5 '>
+     <p className='text-white sm:text-[1.25rem] text-[0.7rem]'>Our Services</p>
      <p className='text-white sm:text-xs text-[0.5rem]'>ERP</p>
      <p className='text-white sm:text-xs text-[0.5rem]'>CMS</p>
      <p className='text-white sm:text-xs text-[0.5rem]'>DMS</p>
  </div>
 
  {/* footer part-3 */}
- <div className='flex flex-col sm:gap-4 gap-1 -ml-4'>
-     <p className='text-white sm:text-[1.25rem] text-[0.9rem]'>About</p>
+ <div className='flex flex-col sm:gap-4 gap-1 '>
+     <p className='text-white sm:text-[1.25rem] text-[0.7rem]'>About</p>
      <p className='text-white sm:text-xs text-[0.5rem]'>About Us</p>
      <p className='text-white sm:text-xs text-[0.5rem]'>Hiring</p>
      <p className='text-white sm:text-xs text-[0.5rem] cursor-pointer' onClick={()=>navigate('/privacy')}>Privacy Policy</p>
@@ -52,13 +52,13 @@ const Footer = () => {
 
  {/* footer part-4 */}
  <div className='flex flex-col sm:gap-4 gap-2'>
-     <p className='text-white sm:text-[1.25rem] text-[0.9rem]'>Help</p>
+     <p className='text-white sm:text-[1.25rem] text-[0.7rem]'>Help</p>
      <p className='text-white sm:text-xs text-[0.5rem]'>Contact Us</p>
      <p className='text-white sm:text-xs text-[0.5rem]'>FAQ</p>
  </div>
  
  {/* footer part-5 */}
- <div className='mt-5'>
+ <div className='mt-5 mr-4 sm:mr-0'>
      <div className='flex sm:gap-4 gap-2'>
      <img src={emailImg} className='sm:w-[12%] w-[10%] sm:h-[0.8rem] h-[0.6rem]'></img>
      <p className='text-white sm:text-xs text-[0.5rem]'>anil.singh@starmounttechnology.com</p>
