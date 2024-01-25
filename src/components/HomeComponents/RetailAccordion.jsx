@@ -36,7 +36,7 @@ const RetailAccordion = () => {
           <Typography
             as="div"
             variant="small"
-            className={`text-xs ml-4 sm:text-base py-2 md:py-7  ${ isMenuOpen ? " text-orange-400" : ""} `}
+            className={`text-xs sm:ml-4 sm:text-base py-2 md:py-7  ${ isMenuOpen ? " text-orange-400" : ""} `}
             color="white"
           >
             <ListItem
@@ -61,11 +61,12 @@ const RetailAccordion = () => {
           </Typography>
         </MenuHandler>
 
-        <MenuList className=" -mt-5  flex flex-col gap-4 bg-[#262220] text-white p-4 border-none">
-          <ul className="hover:text-orange-400 transition-transform delay-200 hover:ease-in">Food & Beverages</ul>
-          <ul className="hover:text-orange-400 ">Hotels</ul>
-          <ul className="hover:text-orange-400 border-none">Manufacturing</ul>
-          <ul className="hover:text-orange-400">Retail</ul>
+        <MenuList className=" -mt-5  flex flex-col gap-4 bg-[#262220] text-white p-4 border-none
+        transition-transform ">
+          <ul className="hover:text-orange-400 transition-transform delay-200 hover:ease-in">About Us</ul>
+          <ul className="hover:text-orange-400 ">Team</ul>
+          <ul className="hover:text-orange-400 border-none">Media</ul>
+          <ul className="hover:text-orange-400">Blogs</ul>
           <ul className="hover:text-orange-400">Distribution</ul>
         </MenuList>
       </Menu>

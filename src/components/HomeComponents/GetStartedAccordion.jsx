@@ -35,7 +35,7 @@ const GetStartedAccordion = () => {
           <Typography
             as="div"
             variant="small"
-            className={`text-xs ml-4 sm:text-base py-2 md:py-7 md:mr-4  `}
+            className={`text-xs sm:ml-4 sm:text-base py-2 md:py-7 md:mr-4  `}
             color="white"
           >
             <ListItem
@@ -60,12 +60,12 @@ const GetStartedAccordion = () => {
           </Typography>
         </MenuHandler>
 
-        <MenuList className=" -mt-5  flex flex-col gap-4 bg-[#262220] text-white p-4 border-none">
-          <ul className="hover:text-orange-400 transition-transform delay-200 hover:ease-in">Food & Beverages</ul>
-          <ul className="hover:text-orange-400 ">Hotels</ul>
-          <ul className="hover:text-orange-400 border-none">Manufacturing</ul>
-          <ul className="hover:text-orange-400">Retail</ul>
-          <ul className="hover:text-orange-400">Distribution</ul>
+        <MenuList className=" -mt-7  flex flex-col gap-4 bg-[#262220] text-white p-4 border-none">
+          <ul className="hover:text-orange-400 transition-transform delay-200 hover:ease-in">Free SignUp</ul>
+          <ul className="hover:text-orange-400 ">Schedule a Demo</ul>
+          <ul className="hover:text-orange-400 border-none">Become a Partner</ul>
+          <ul className="hover:text-orange-400"></ul>
+          <ul className="hover:text-orange-400"></ul>
         </MenuList>
       </Menu>
       <div className="absolute md:hidden bg-red-400  !border-none">

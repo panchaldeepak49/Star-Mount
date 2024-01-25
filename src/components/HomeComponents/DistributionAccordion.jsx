@@ -1,4 +1,5 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 import {
   Navbar,
   Collapse,
@@ -16,6 +17,8 @@ import {
 import { ChevronDownIcon } from "@heroicons/react/24/outline";
 
 const DistributionAccordion = () => {
+
+  const navigate = useNavigate();
 
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
@@ -35,7 +38,7 @@ const DistributionAccordion = () => {
           <Typography
             as="div"
             variant="small"
-            className={`text-xs ml-4 sm:text-base py-2 md:py-7  ${ isMenuOpen ? " text-orange-400" : ""} `}
+            className={`text-xs sm:ml-4 sm:text-base py-2 md:py-7  ${ isMenuOpen ? " text-orange-400" : ""} `}
             color="white"
           >
             <ListItem
@@ -43,7 +46,7 @@ const DistributionAccordion = () => {
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
-              Segments
+             Services
               <ChevronDownIcon
                 strokeWidth={2.5}
                 className={`hidden h-3 w-3 transition-transform  lg:block ${
@@ -60,12 +63,14 @@ const DistributionAccordion = () => {
           </Typography>
         </MenuHandler>
 
-        <MenuList className=" -mt-5  flex flex-col gap-4 bg-[#262220] text-white p-4 border-none">
-          <ul className="hover:text-orange-400 transition-transform delay-200 hover:ease-in">Food & Beverages</ul>
-          <ul className="hover:text-orange-400 ">Hotels</ul>
-          <ul className="hover:text-orange-400 border-none">Manufacturing</ul>
-          <ul className="hover:text-orange-400">Retail</ul>
-          <ul className="hover:text-orange-400">Distribution</ul>
+        <MenuList className=" -mt-5  flex flex-col gap-4 bg-[#262220] text-white p-4 border-none
+        transition-transform delay-200 ">
+          <ul className="hover:text-orange-400  cursor-pointer"
+          onClick={()=>navigate('/ourServices')}> Our Services</ul>
+          <ul className="hover:text-orange-400 ">ERP</ul>
+          <ul className="hover:text-orange-400 cursor-pointer" onClick={()=>navigate('/dms')}>DMS</ul>
+          <ul className="hover:text-orange-400">CMS</ul>
+          <ul className="hover:text-orange-400" onClick={()=>navigate('/benefits')}>Benefits</ul>
         </MenuList>
       </Menu>
       <div className="absolute md:hidden bg-red-400  !border-none">
