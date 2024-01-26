@@ -1,11 +1,11 @@
 import React from 'react'
-import erpImg from '/Images/erp.jpeg'
+import erpImg from '/Images/erp1.jpeg'
 
 const OurServices = () => {
   return (
     <>
     <div className='flex justify-center '>
-     <img src={erpImg}></img>
+     <img src={erpImg} alt="missing" className='w-[35%]'></img>
      
      </div>
 

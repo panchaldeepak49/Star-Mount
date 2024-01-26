@@ -23,6 +23,23 @@ const DistributionAccordion = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
 
+  const renderItems = ()=>{
+    if (!isMobileMenuOpen) {
+      return null; // Don't render items if mobile menu is closed
+  }
+    return(
+    <>
+      <div className='relative text-xs flex flex-col gap-2 font-semibold z-50 bg-green-400 p-2'>
+        <ul className="hover:text-orange-400 ml-2" onClick={()=>navigate('/ourServices')}>OurServices</ul>
+        <ul className="hover:text-orange-400 ml-2">ERP</ul>
+        <ul className="hover:text-orange-400 ml-2 border-none" onClick={()=>navigate('/dms')}>DMS</ul>
+        <ul className="hover:text-orange-400 ml-2">CMS</ul>
+        <ul className="hover:text-orange-400 ml-2" onClick={()=>navigate('/benefits')}>Benefits</ul>
+        </div>
+      </>
+    ) 
+  }
+
   return (
     <>
     <React.Fragment>
@@ -63,18 +80,18 @@ const DistributionAccordion = () => {
           </Typography>
         </MenuHandler>
 
-        <MenuList className=" -mt-5  flex flex-col gap-4 bg-[#262220] text-white p-4 border-none
+        <MenuList className="hidden -mt-5  md:flex md:flex-col gap-4 bg-[#262220] text-white p-4 border-none
         transition-transform delay-200 ">
           <ul className="hover:text-orange-400  cursor-pointer"
           onClick={()=>navigate('/ourServices')}> Our Services</ul>
-          <ul className="hover:text-orange-400 ">ERP</ul>
+          <ul className="hover:text-orange-400 cursor-pointer" onClick={()=>navigate('/erp')}>ERP</ul>
           <ul className="hover:text-orange-400 cursor-pointer" onClick={()=>navigate('/dms')}>DMS</ul>
           <ul className="hover:text-orange-400">CMS</ul>
-          <ul className="hover:text-orange-400" onClick={()=>navigate('/benefits')}>Benefits</ul>
+          <ul className="hover:text-orange-400 cursor-pointer" onClick={()=>navigate('/benefits')}>Benefits</ul>
         </MenuList>
       </Menu>
-      <div className="absolute md:hidden bg-red-400  !border-none">
-        <Collapse open={isMobileMenuOpen}></Collapse>
+      <div className="absolute md:hidden w-full  !border-none">
+        <Collapse open={isMobileMenuOpen}>{renderItems()}</Collapse>
       </div>
     </React.Fragment>
     </>

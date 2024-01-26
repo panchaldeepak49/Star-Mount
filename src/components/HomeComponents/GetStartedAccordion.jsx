@@ -20,6 +20,23 @@ const GetStartedAccordion = () => {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
 
+    const renderItems = ()=>{
+      if (!isMobileMenuOpen) {
+        return null; // Don't render items if mobile menu is closed
+    }
+      return(
+      <>
+        <div className='relative text-xs flex flex-col gap-2 font-semibold z-50 bg-green-400 p-2'>
+          <ul className="hover:text-orange-400 ">Free SignUp</ul>
+          <ul className="hover:text-orange-400 ">Schedule a Demo</ul>
+          <ul className="hover:text-orange-400  border-none">Become a Partner</ul>
+          <ul className="hover:text-orange-400 "></ul>
+          <ul className="hover:text-orange-400 "></ul>
+          </div>
+        </>
+      ) 
+    }
+
   return (
     <>
     <React.Fragment>
@@ -39,7 +56,7 @@ const GetStartedAccordion = () => {
             color="white"
           >
             <ListItem
-              className="flex items-center gap-2 ml-0 md:ml-0 font-semibold bg-orange-400 p-2 rounded-md"
+              className="flex items-center gap-2 ml-0 md:ml-0 font-semibold bg-orange-400 hover:bg-transparent p-2 rounded-md "
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
@@ -60,7 +77,7 @@ const GetStartedAccordion = () => {
           </Typography>
         </MenuHandler>
 
-        <MenuList className=" -mt-7  flex flex-col gap-4 bg-[#262220] text-white p-4 border-none">
+        <MenuList className="hidden -mt-7  md:flex md:flex-col gap-4 bg-[#262220] text-white p-4 border-none">
           <ul className="hover:text-orange-400 transition-transform delay-200 hover:ease-in">Free SignUp</ul>
           <ul className="hover:text-orange-400 ">Schedule a Demo</ul>
           <ul className="hover:text-orange-400 border-none">Become a Partner</ul>
@@ -68,8 +85,8 @@ const GetStartedAccordion = () => {
           <ul className="hover:text-orange-400"></ul>
         </MenuList>
       </Menu>
-      <div className="absolute md:hidden bg-red-400  !border-none">
-        <Collapse open={isMobileMenuOpen}></Collapse>
+      <div className="absolute md:hidden  !border-none">
+        <Collapse open={isMobileMenuOpen}>{renderItems()}</Collapse>
       </div>
     </React.Fragment>
     </>

@@ -32,7 +32,7 @@ const Navbar = () => {
     <ul className={` md:flex md:items-center md:justify-between relative  md:mr-0  z-50  md:static md:mt-0 bg-[#002B46] sm:mt-96  md:h-20 h-auto md:w-auto 
                     left-0 md:py-0 py-4 md:pl-0 sm:opacity-100 ${isMenuOpen ? 'opacity-100' : 'opacity-0'}  transition-all ease-in duration-500`}>
           
-          <li className='flex items-center md:mx-2 md:py-8 py-2 px-2  font-semibold text-white sm:text-base text-xs hover:text-orange-500'>
+          <li className='flex items-center md:mx-2 md:py-8 py-2 px-2  font-semibold text-white sm:text-base text-xs hover:text-orange-500 transition-0.4s'>
               <a href='/'>Home</a> 
           </li>
           <RetailAccordion />

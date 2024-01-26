@@ -6,6 +6,7 @@ import Footer from '../components/GlobalComponents/Footer'
 import OurServices from '../pages/OurServices'
 import Benefits from '../pages/Benefits'
 import DMS from '../pages/DMS'
+import Erp from '../pages/Erp'
 
 const Path = () => {
   return (
@@ -17,6 +18,7 @@ const Path = () => {
         <Route path='/ourServices' element={<OurServices />}></Route> 
         <Route path='/benefits' element={<Benefits />}></Route> 
         <Route path='/dms' element={<DMS />}></Route> 
+        <Route path='/erp' element={<Erp />}></Route> 
      </Routes>
 
      <Footer />

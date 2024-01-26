@@ -1,11 +1,11 @@
 import React from 'react'
-import erpImg from '/Images/crm.jpeg'
+import warehouseImg from '/Images/warehouse2.jpg'
 
 const Benefits = () => {
   return (
     <>
-    <div className='flex justify-center '>
-     <img src={erpImg}></img>
+    <div className='flex justify-center mt-2'>
+     <img src={warehouseImg} alt="missing" className='w-[50%]'></img>
      
      </div>
 

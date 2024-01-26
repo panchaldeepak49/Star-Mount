@@ -1,5 +1,6 @@
 import React from 'react'
 import rectangleFooterImg from '/Images/FooterImg/Rectangle 32.png'
+import logoImg from "/Images/logo.png"
 import facebookImg from '/Images/FooterImg/facebook.png'
 import instagramImg from '/Images/FooterImg/instagram.png'
 import twitterImg from '/Images/FooterImg/twitter.png'
@@ -17,7 +18,7 @@ const Footer = () => {
 <div className=' mt-10 flex lg:gap-24 md:gap-16 sm:gap-10 gap-2 bg-[#221957] pt-10 pb-10'>
  {/* footer part-1 */}
  <div className='ml-2 sm:ml-10'>
-     <img src={""} className='w-[15%]'></img>
+     <img src={logoImg} className='w-[50%]'></img>
      <p className='text-white sm:text-sm text-[0.3rem] sm:mt-5 mt-3'>Star Mount Technology</p>
      <p className='text-white sm:text-sm text-[0.3rem]'>Plot No.304 Kh. No.-1074,Kapashera</p>
      <p className='text-white sm:text-sm text-[0.3rem]'>New Delhi-110037 India </p>
