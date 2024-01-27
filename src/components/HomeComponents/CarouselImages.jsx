@@ -71,25 +71,25 @@ const CarouselImages = () => {
         </div> */}
 
         <div className='bg-green-400'>
-           <img className='sm:w-[50%] h-60 sm:h-96 sm:ml-96' src={Img1} alt='missing'/>
+           <img className='w-[100%] h-60 sm:h-96 sm:ml-0' src={Img1} alt='missing'/>
         </div>
 
         <div className=' bg-red-400 '>
             {/* <p className='text-red-600'>Streamline your business with our end to end IT solutions</p> */}
-            <img className='sm:w-[80%] h-60 sm:h-96  sm:ml-32' src={sesImg} alt='missing'/>
+            <img className='w-[100%] h-60 sm:h-96  sm:ml-0' src={sesImg} alt='missing'/>
         </div>
 
         <div className='bg-green-400'>
-           <img className='sm:w-[50%] h-60 sm:h-96  sm:ml-96' src={Img2} alt='missing'/>
+           <img className='w-[100%] h-60 sm:h-96  sm:ml-0' src={Img2} alt='missing'/>
         </div>
 
         <div className=' bg-orange-400 '>
             {/* <p className='text-red-600'>Streamline your business with our end to end IT solutions</p> */}
-            <img className='sm:w-[50%] h-60 sm:h-96 ml-6  sm:ml-96' src={Img3} alt='missing'/>
+            <img className='w-[100%] h-60 sm:h-96   sm:ml-0' src={Img3} alt='missing'/>
         </div>
 
         <div className='bg-blue-400'>
-            <img className='sm:w-[50%] h-60 sm:h-96  sm:ml-96' src={Img4} alt='missing'/>
+            <img className='w-[100%] h-60 sm:h-96  sm:ml-0' src={Img4} alt='missing'/>
         </div>
        </Slider>
        </div>
