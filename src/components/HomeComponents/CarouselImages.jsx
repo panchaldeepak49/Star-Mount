@@ -83,14 +83,13 @@ const CarouselImages = () => {
            <img className='w-[100%] h-60 sm:h-96  sm:ml-0' src={Img2} alt='missing'/>
         </div>
 
-        <div className=' bg-orange-400 '>
-            {/* <p className='text-red-600'>Streamline your business with our end to end IT solutions</p> */}
+        {/* <div className=' bg-orange-400 '>
             <img className='w-[100%] h-60 sm:h-96   sm:ml-0' src={Img3} alt='missing'/>
-        </div>
+        </div> */}
 
-        <div className='bg-blue-400'>
+        {/* <div className='bg-blue-400'>
             <img className='w-[100%] h-60 sm:h-96  sm:ml-0' src={Img4} alt='missing'/>
-        </div>
+        </div> */}
        </Slider>
        </div>
     </>

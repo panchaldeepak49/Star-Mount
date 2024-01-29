@@ -7,6 +7,11 @@ import './App.css'
 import { BrowserRouter as Router} from 'react-router-dom'
 
 AOS.init();
+AOS.init();
+AOS.init();
+AOS.init();
+AOS.init();
+AOS.init();
 
 function App() {
   const [count, setCount] = useState(0)

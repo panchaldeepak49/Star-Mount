@@ -38,17 +38,20 @@ const Footer = () => {
  {/* footer part-2 */}
  <div className='flex flex-col sm:gap-4 gap-1 md:ml-14 sm:ml-5 '>
      <p className='text-white sm:text-[1.25rem] text-[0.7rem]'>Our Services</p>
-     <p className='text-white sm:text-xs text-[0.5rem]'>ERP</p>
-     <p className='text-white sm:text-xs text-[0.5rem]'>CMS</p>
-     <p className='text-white sm:text-xs text-[0.5rem]'>DMS</p>
+     <p className='text-white sm:text-xs text-[0.5rem]'>Mobile Application</p>
+     <p className='text-white sm:text-xs text-[0.5rem]'>Web Application</p>
+     <p className='text-white sm:text-xs text-[0.5rem]'>Windows Application</p>
+     <p className='text-white sm:text-xs text-[0.5rem]'>Search Engine Optimization</p>
  </div>
 
  {/* footer part-3 */}
  <div className='flex flex-col sm:gap-4 gap-1 '>
-     <p className='text-white sm:text-[1.25rem] text-[0.7rem]'>About</p>
-     <p className='text-white sm:text-xs text-[0.5rem]'>About Us</p>
-     <p className='text-white sm:text-xs text-[0.5rem]'>Hiring</p>
-     <p className='text-white sm:text-xs text-[0.5rem] cursor-pointer' onClick={()=>navigate('/privacy')}>Privacy Policy</p>
+     <p className='text-white sm:text-[1.25rem] text-[0.7rem]'>Products</p>
+     <p className='text-white sm:text-xs text-[0.5rem]'>SMT ERP</p>
+     <p className='text-white sm:text-xs text-[0.5rem]'>SMT DMS</p>
+     <p className='text-white sm:text-xs text-[0.5rem]'>SMT CRM</p>
+     <p className='text-white sm:text-xs text-[0.5rem]'>SMT Warehouse Management</p>
+     <p className='text-white sm:text-xs text-[0.5rem]'>SMT Project Management</p>
  </div>
 
  {/* footer part-4 */}

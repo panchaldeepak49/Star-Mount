@@ -56,7 +56,7 @@ const GetStartedAccordion = () => {
             color="white"
           >
             <ListItem
-              className="flex items-center gap-2 ml-0 md:ml-0 font-semibold bg-orange-400 hover:bg-transparent p-2 rounded-md "
+              className="flex items-center gap-2 ml-0 md:ml-0 font-semibold bg-orange-400 hover:bg-[#525FE1] p-2 rounded-md "
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >

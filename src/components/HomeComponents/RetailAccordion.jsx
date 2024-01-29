@@ -14,8 +14,11 @@ import {
     Drawer,
   } from "@material-tailwind/react";
   import { ChevronDownIcon } from "@heroicons/react/24/outline";
+  import { useNavigate } from 'react-router-dom';
 
 const RetailAccordion = () => {
+
+    const navigate = useNavigate();
 
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
@@ -27,11 +30,10 @@ const RetailAccordion = () => {
       return(
       <>
         <div className='relative text-xs flex flex-col gap-2 font-semibold z-50 bg-green-400 p-2'>
-          <ul className="hover:text-orange-400 ml-2">About Us</ul>
-          <ul className="hover:text-orange-400 ml-2">Team</ul>
-          <ul className="hover:text-orange-400 ml-2 border-none">Media</ul>
-          <ul className="hover:text-orange-400 ml-2">Blogs</ul>
-          <ul className="hover:text-orange-400 ml-2">Distribution</ul>
+          <ul className="hover:text-orange-400 ml-2" onClick={()=>navigate('/mobileApplication')}>Mobile Application</ul>
+          <ul className="hover:text-orange-400 ml-2" onClick={()=>navigate('/webApplication')}>Web Application</ul>
+          <ul className="hover:text-orange-400 ml-2 border-none" onClick={()=>navigate('/windowsApplication')}>Windows Application</ul>
+          <ul className="hover:text-orange-400 ml-2" onClick={()=>navigate('/seo')}>Search Engine Optimization</ul> 
           </div>
         </>
       ) 
@@ -64,7 +66,7 @@ const RetailAccordion = () => {
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
               
             >
-              Solutions
+              Services
               <ChevronDownIcon
                 strokeWidth={2.5}
                 className={`hidden h-3 w-3 transition-transform  lg:block ${
@@ -83,11 +85,12 @@ const RetailAccordion = () => {
 
         <MenuList className="hidden -mt-5  md:flex md:flex-col gap-4 bg-[#262220] text-white p-4 border-none
         transition-transform ">
-          <ul className="hover:text-orange-400 transition-transform delay-200 hover:ease-in">About Us</ul>
-          <ul className="hover:text-orange-400 ">Team</ul>
-          <ul className="hover:text-orange-400 border-none">Media</ul>
-          <ul className="hover:text-orange-400">Blogs</ul>
-          <ul className="hover:text-orange-400">Distribution</ul>
+          <ul className="hover:text-orange-400 transition-transform delay-200 hover:ease-in cursor-pointer"
+          onClick={()=>navigate('/mobileApplication')}>Mobile Application</ul>
+          <ul className="hover:text-orange-400 cursor-pointer" onClick={()=>navigate('/webApplication')}>Web Application</ul>
+          <ul className="hover:text-orange-400 cursor-pointer" onClick={()=>navigate('/windowsApplication')}>Windows Application</ul>
+          <ul className="hover:text-orange-400 cursor-pointer" onClick={()=>navigate('/seo')}>Search Engine Optimization</ul>
+          
           
         </MenuList>
       </Menu>

@@ -1,31 +1,26 @@
 import React from 'react'
-import TypewriterComponent from "typewriter-effect";
+import crmImg from '/Images/crm.jpeg'
 
-const Business = () => {
+const Crm = () => {
   return (
     <>
-    <div className='mt-14 text-[1.5rem]  sm:text-[2rem] text-orange-500 text-center px-2'>
-        <p>Streamline Your Business with Our End-to-End IT Solutions</p>  
-    </div>
+    <div className='flex flex-col sm:flex sm:flex-row items-center  w-full '>
+      <div className='sm:w-[60%] px-6 sm:px-36  '>
+      <p className=' font-semibold text-orange-500 text-xl sm:text-[2rem]'>What is CRM?</p>
+      <p className='mt-6 text-xs sm:text-[1rem] text-gray-800'>CRM is a strategic approach and comprehensive set of tools designed to manage all your interactions  with customers and
+         potential customers. It's like having a digital brain for your business, helping you:
+         </p>
+      </div>
+     <img src={crmImg} alt="missing" className='w-[35%]'></img>
+     </div>
 
-    <div className="font-semibold  text-center text-[1.5rem] sm:text-[2rem] text-[#00649E] hover:text-[#1D1D1D]">
-    <TypewriterComponent 
-                  options={{
-                    autoStart: true,
-                    loop: true,
-                    delay: 50,
-                    strings: "Star Mount Technology",
-                  }}
-                />
-
-    </div>
-
-    <div className='flex  justify-center mt-10' >
-    <div className='flex flex-col items-center  bg-gray-200 sm:w-[80%] rounded-xl  py-6 px-4 sm:px-10 shadow-xl
-    bg-[url("/Images/ellipse/1.png")] bg-cover' data-aos="zoom-in" >
-        <p className='font-semibold text-center text-orange-500 text-xl sm:text-[2rem]'>What is CRM?</p>
+     <div className='flex  justify-center mt-10' >
+    <div className='flex flex-col items-start  bg-green-200 sm:w-[80%] rounded-md  py-6 px-4 sm:px-10 shadow-xl
+    bg-[url("/Images/ellipse/1.png")] bg-cover'  >
+        <p className='font-semibold text-orange-500 text-xl sm:text-[2rem]'>CRM helps you in :</p>
+        {/* <p className='font-semibold text-center text-orange-500 text-xl sm:text-[2rem]'>What is CRM?</p>
         <p className='mt-4 text-center text-[#383838]'>CRM is a strategic approach and comprehensive set of tools designed to manage all your interactions  with customers and
-         potential customers. It's like having a digital brain for your business, helping you:</p>
+         potential customers. It's like having a digital brain for your business, helping you:</p> */}
           
          <div className='flex flex-col items-start text-[#383838]'>
          <li className='mt-6 text-xs sm:text-[1rem]'><span className='font-semibold'>Centralize customer data :</span>From contact information to 
@@ -35,7 +30,6 @@ const Business = () => {
         <li className='mt-2 text-xs sm:text-[1rem]'><span className='font-semibold'>Deliver exceptional customer service :</span>Resolve issues quickly, anticipate needs, and build lasting relationships. </li>
         
         <li className='mt-2 text-xs sm:text-[1rem]'><span className='font-semibold'>Gain valuable insights :</span>Analyze data to understand customer behavior, identify trends, and make data-driven decisions.</li>
-        
          </div>  
         </div>    
     </div>
@@ -45,8 +39,8 @@ const Business = () => {
     </div>
 
     <div className='flex  justify-center mt-10'>
-    <div className='flex flex-col items-center  bg-green-200 sm:w-[80%] rounded-xl  py-6 px-2 sm:px-10 shadow-xl
-    bg-[url("/Images/ellipse/8.png")] bg-cover'data-aos="zoom-in" >
+    <div className='flex flex-col items-center  bg-gray-200 sm:w-[80%] rounded-md  py-6 px-2 sm:px-10 shadow-xl
+    bg-[url("/Images/ellipse/8.png")] bg-cover' data-aos='zoom-in' >
         <p className='font-semibold text-center text-orange-500 text-xl sm:text-[2rem]'>Benefits of implementing a CRM</p>
           
          <div className='flex flex-col items-start text-[#383838]'>
@@ -65,4 +59,4 @@ const Business = () => {
   )
 }
 
-export default Business
+export default Crm

@@ -1,5 +1,5 @@
 import React from 'react'
-import erpImg from '/Images/erp1.jpeg'
+import erpImg from '/Images/erp2.jpeg'
 import sesImg from '/Images/ses.jpeg'
 import ellipse1 from '/Images/ellipse/1.png'
 
@@ -8,7 +8,7 @@ const Erp = () => {
   return (
     <>
     <div className='flex flex-col sm:flex sm:flex-row items-center  w-full '>
-      <div className='sm:w-[60%] px-6 sm:px-20'>
+      <div className='sm:w-[60%] px-6 sm:px-32'>
       <p className=' font-semibold text-orange-500 text-xl sm:text-[2rem]'>What is ERP?</p>
       <p className='mt-6 text-xs sm:text-[1rem] text-gray-800'>ERP is a unified software platform that integrates all
          your core business functions, from accounting and finance to inventory management, customer 
@@ -31,8 +31,8 @@ const Erp = () => {
     </div> */}
 
     <div className='flex justify-center'>
-     <div className='flex flex-col items-start mt-10 bg-gray-200 sm:w-[70%] py-6 px-4 
-     bg-[url("/Images/ellipse/1.png")] bg-contain bg-no-repeat'>
+     <div className='flex flex-col items-start mt-10 bg-gray-200 sm:w-[70%] py-6 px-4 rounded-xl
+     bg-[url("/Images/ellipse/1.png")] bg-cover hover:border-2 border-orange-400 box-content transition-transform delay-50'>
       {/* <img src={ellipse1} className='absolute z-50 w-[50%] h-60'></img> */}
         <p className='font-semibold text-orange-500 text-xl sm:text-[2rem]'>Benefits of Implementing ERP :</p>
 
@@ -45,7 +45,7 @@ const Erp = () => {
      </div>
 
      <div className='flex justify-center mt-10' >
-     <img src={sesImg} alt="missing" className='w-[50%]'  ></img>
+     <img src={sesImg} alt="missing" className='w-[50%]' data-aos='zoom-in'  ></img>
      </div>
     </>
   )

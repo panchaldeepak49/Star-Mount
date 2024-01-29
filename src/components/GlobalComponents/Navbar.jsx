@@ -35,8 +35,9 @@ const Navbar = () => {
           <li className='flex items-center md:mx-2 md:py-8 py-2 px-2  font-semibold text-white sm:text-base text-xs hover:text-orange-500 transition-0.4s'>
               <a href='/'>Home</a> 
           </li>
-          <RetailAccordion />
+          
           <DistributionAccordion />
+          <RetailAccordion />
           
           
 

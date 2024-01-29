@@ -63,7 +63,7 @@ const DistributionAccordion = () => {
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
-             Services
+             Products
               <ChevronDownIcon
                 strokeWidth={2.5}
                 className={`hidden h-3 w-3 transition-transform  lg:block ${
@@ -84,10 +84,13 @@ const DistributionAccordion = () => {
         transition-transform delay-200 ">
           <ul className="hover:text-orange-400  cursor-pointer"
           onClick={()=>navigate('/ourServices')}> Our Services</ul>
-          <ul className="hover:text-orange-400 cursor-pointer" onClick={()=>navigate('/erp')}>ERP</ul>
-          <ul className="hover:text-orange-400 cursor-pointer" onClick={()=>navigate('/dms')}>DMS</ul>
-          <ul className="hover:text-orange-400">CMS</ul>
+          <ul className="hover:text-orange-400 cursor-pointer" onClick={()=>navigate('/erp')}>SMT ERP</ul>
+          <ul className="hover:text-orange-400 cursor-pointer" onClick={()=>navigate('/dms')}> SMT DMS</ul>
+          <ul className="hover:text-orange-400 cursor-pointer" onClick={()=>navigate('/crm')}> SMT CRM</ul>
           <ul className="hover:text-orange-400 cursor-pointer" onClick={()=>navigate('/benefits')}>Benefits</ul>
+          <ul className="hover:text-orange-400"> SMT Warehouse Management</ul>
+          <ul className="hover:text-orange-400"> SMT Project Management</ul>
+          <ul className="hover:text-orange-400"> Customized ERP for All Industries</ul>
         </MenuList>
       </Menu>
       <div className="absolute md:hidden w-full  !border-none">
