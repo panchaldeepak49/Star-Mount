@@ -4,7 +4,7 @@ import React from 'react'
 const OurTrainers = () => {
   return (
     <>
-    <div className='mt-20 flex justify-center'>
+    <div className='mt-10 flex justify-center'>
         <p className='sm:text-[4rem] text-[2rem] text-[#525FE1] font-semibold'>Our Partners</p>
     </div>
 

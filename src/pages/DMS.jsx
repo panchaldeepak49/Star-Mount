@@ -30,7 +30,7 @@ const DMS = () => {
 
      <div className='flex justify-center'>
      <div className='flex flex-col items-start mt-10 bg-gray-200 sm:w-[70%] py-6 px-4 sm:px-4 rounded-md
-     bg-[url("/Images/ellipse/6.png")] bg-contain bg-no-repeat' data-aos="zoom-in" >
+     bg-[url("/Images/ellipse/6.png")] bg-cover bg-no-repeat' data-aos="zoom-in" >
         <p className='font-semibold text-orange-500 text-xl sm:text-[2rem]'>Our DMS empowers you to :</p>
 
         <li className='mt-6 text-xs sm:text-[1rem]'><span className='font-semibold'>Simplify Order Management :</span>Create, process, and track orders online, eliminating manual paperwork and errors. 
@@ -50,7 +50,7 @@ const DMS = () => {
 
      <div className='flex justify-center'>
      <div className='flex flex-col items-start mt-10 bg-pink-200  sm:w-[70%] py-6 px-4 rounded-md
-     bg-[url("/Images/ellipse/5.png")] bg-contain bg-no-repeat' data-aos="zoom-in">
+     bg-[url("/Images/ellipse/5.png")] bg-cover bg-no-repeat' data-aos="zoom-in">
         <p className='font-semibold text-orange-500 text-xl sm:text-[2rem]' >Our DMS stands out with :</p>
 
         <li className='mt-6 text-xs sm:text-[1rem]'><span className='font-semibold'>User-friendly interface :</span>Simple and intuitive for both you and your distributors.</li>

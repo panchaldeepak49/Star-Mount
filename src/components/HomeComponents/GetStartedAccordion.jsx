@@ -56,7 +56,7 @@ const GetStartedAccordion = () => {
             color="white"
           >
             <ListItem
-              className="flex items-center gap-2 ml-0 md:ml-0 font-semibold bg-orange-400 hover:bg-[#525FE1] p-2 rounded-md "
+              className="flex items-center gap-2 ml-0 md:ml-0 font-Syne bg-orange-400 hover:bg-[#525FE1] p-2 rounded-md "
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
@@ -77,12 +77,12 @@ const GetStartedAccordion = () => {
           </Typography>
         </MenuHandler>
 
-        <MenuList className="hidden -mt-7  md:flex md:flex-col gap-4 bg-[#262220] text-white p-4 border-none">
-          <ul className="hover:text-orange-400 transition-transform delay-200 hover:ease-in">Free SignUp</ul>
-          <ul className="hover:text-orange-400 ">Schedule a Demo</ul>
-          <ul className="hover:text-orange-400 border-none">Become a Partner</ul>
-          <ul className="hover:text-orange-400"></ul>
-          <ul className="hover:text-orange-400"></ul>
+        <MenuList className="hidden -mt-7  md:flex md:flex-col gap-4 bg-[#262220] text-white  p-4 border-none">
+          <ul className="hover:text-orange-400 transition-transform delay-200 hover:ease-in font-Syne">Free SignUp</ul>
+          <ul className="hover:text-orange-400 font-Syne">Schedule a Demo</ul>
+          <ul className="hover:text-orange-400 border-none font-Syne">Become a Partner</ul>
+          <ul className="hover:text-orange-400 font-Syne"></ul>
+          <ul className="hover:text-orange-400 font-Syne"></ul>
         </MenuList>
       </Menu>
       <div className="absolute md:hidden  !border-none">

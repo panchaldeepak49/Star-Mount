@@ -4,6 +4,7 @@ import CarouselImages from '../components/HomeComponents/CarouselImages'
 import Business from '../components/HomeComponents/Business'
 import Services from '../components/HomeComponents/Services'
 import OurTrainers from '../components/HomeComponents/OurTrainers'
+import Cards from '../components/HomeComponents/Cards'
 
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
     <CarouselImages />
     <Business />
     <Services />
+    <Cards />
     <OurTrainers />
     
     </>

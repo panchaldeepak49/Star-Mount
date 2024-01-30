@@ -11,17 +11,17 @@ const Services = () => {
     const navigate = useNavigate();
   return (
     <>
-    <div className='mt-20 flex justify-center'>
+    <div className='mt-10 flex justify-center'>
         <p className='sm:text-[4rem] text-[2rem] text-[#525FE1] font-semibold'>Our Services</p>
     </div>
-
+      {/* service-1 */}
     <p className='text-center mt-6 text-xl sm:text-[2rem] font-semibold text-[#383838]'>Mobile Application</p>
     
     <div className='flex justify-center'>
     <div className='flex flex-col sm:flex sm:flex-row sm:justify-between items-center sm:w-[70%] mt-6 '>
       <div className='sm:w-[50%] px-6 sm:px-7 bg-gradient-to-r from-orange-300 to-red-200 
        rounded-md hover:rounded-full transition-transform delay-300 ease-in'>
-      <p className='mt-6 text-xs sm:text-[1rem]  text-[#383838]'>Mobile applications or simply apps, are software programs designed 
+      <p className='mt-6 text-xs sm:text-[1rem] font-Syne  text-[#383838]'>Mobile applications or simply apps, are software programs designed 
       specifically for your smartphone or tablet. They're like tiny, specialized companions on your device,
        catering to everything from entertainment and social interaction to productivity and essential services.
          </p>
@@ -34,7 +34,7 @@ const Services = () => {
      </div>
      </div>
 
-     
+      {/* service-2 */}
      <p className='text-center mt-10 text-xl sm:text-[2rem] font-semibold text-[#383838]'>Web Design</p>
      <div className='flex justify-center '>
     <div className='flex flex-col sm:flex sm:flex-row sm:justify-between items-center sm:w-[70%] mt-6 '>
@@ -42,7 +42,7 @@ const Services = () => {
 
       <div className='sm:w-[50%] mt-6 sm:mt-0 px-6 sm:px-7 bg-gradient-to-r from-red-300 to-orange-400 
        rounded-md hover:rounded-full transition-transform delay-300'>
-      <p className='mt-6 text-xs sm:text-[1rem] text-[#383838]'>Web design, the architect of the digital world, is 
+      <p className='mt-6 text-xs sm:text-[1rem] font-Syne text-[#383838]'>Web design, the architect of the digital world, is 
       more than just making things look pretty. It's about crafting websites that are as visually appealing
        as they are functional and intuitive. Imagine browsing a well-designed website; it's like walking into
         a beautifully organized and thoughtfully decorated home – everything has its place, and you just feel comfortable and engaged.
@@ -55,14 +55,14 @@ const Services = () => {
      </div>
 
 
-
+      {/* service-3 */}
      <p className='text-center mt-10 text-xl sm:text-[2rem] font-semibold text-[#383838]'>Windows Application</p>
     
     <div className='flex justify-center'>
     <div className='flex flex-col sm:flex sm:flex-row sm:justify-between items-center sm:w-[70%] mt-6 '>
       <div className='sm:w-[50%] px-6 sm:px-7 bg-gradient-to-r from-orange-300 to-red-300 via-green-200 
         rounded-md hover:rounded-full transition-transform delay-300'>
-      <p className='mt-6 text-xs sm:text-[1rem] text-[#383838] '>A Windows application, also known as a Win32 application, 
+      <p className='mt-6 text-xs sm:text-[1rem] text-[#383838] font-Syne '>A Windows application, also known as a Win32 application, 
       is a software program designed to run specifically on the Windows operating system. Unlike web applications
     that you access through a browser, Windows applications are installed directly on your computer and
      run independently. They typically have their own user interface (UI) with windows, menus, buttons,
@@ -73,11 +73,11 @@ const Services = () => {
          </div>
       </div>
       
-     <img src={webImg} alt="missing" className='  sm:w-[30%] mt-4 sm:mt-0 hover:scale-110 transition-transform delay-50' data-aos="zoom-in"></img>
+     <img src={webImg} alt="missing" className='  sm:w-[40%] mt-4 sm:mt-0 hover:scale-110 transition-transform delay-50' data-aos="zoom-in"></img>
      </div>
      </div>
 
-
+      {/* service-4 */}
      <p className='text-center mt-10 text-xl sm:text-[2rem] font-semibold text-[#383838]'>Search Engine Optimization</p>
      <div className='flex justify-center '>
     <div className='flex flex-col sm:flex sm:flex-row sm:justify-between items-center sm:w-[70%] mt-6 '>
@@ -85,7 +85,7 @@ const Services = () => {
 
       <div className='sm:w-[50%] mt-6 sm:mt-0 px-6 sm:px-7 bg-gradient-to-r from-red-400 to-orange-400 via-green-200 
        rounded-md hover:rounded-full transition-transform delay-300'>
-      <p className='mt-6 text-xs sm:text-[1rem] text-[#383838]'>Think of the internet as a vast library, and search engines like 
+      <p className='mt-6 text-xs sm:text-[1rem] text-[#383838] font-sans'>Think of the internet as a vast library, and search engines like 
       Google are the librarians. Just like you wouldn't want your favourite book buried deep in the back
        shelves, you don't want your website lost in the endless pages of search results. That's where 
        Search Engine Optimization (SEO) comes in.

@@ -30,11 +30,11 @@ const DistributionAccordion = () => {
     return(
     <>
       <div className='relative text-xs flex flex-col gap-2 font-semibold z-50 bg-green-400 p-2'>
-        <ul className="hover:text-orange-400 ml-2" onClick={()=>navigate('/ourServices')}>OurServices</ul>
-        <ul className="hover:text-orange-400 ml-2">ERP</ul>
+        {/* <ul className="hover:text-orange-400 ml-2" onClick={()=>navigate('/ourServices')}>OurServices</ul> */}
+        <ul className="hover:text-orange-400 ml-2" onClick={()=>navigate('/erp')}>ERP</ul>
         <ul className="hover:text-orange-400 ml-2 border-none" onClick={()=>navigate('/dms')}>DMS</ul>
-        <ul className="hover:text-orange-400 ml-2">CMS</ul>
-        <ul className="hover:text-orange-400 ml-2" onClick={()=>navigate('/benefits')}>Benefits</ul>
+        <ul className="hover:text-orange-400 ml-2" onClick={()=>navigate('/crm')}>CRM</ul>
+        <ul className="hover:text-orange-400 ml-2" >Warehouse</ul>
         </div>
       </>
     ) 
@@ -59,7 +59,7 @@ const DistributionAccordion = () => {
             color="white"
           >
             <ListItem
-              className="flex items-center gap-2 ml-2 md:ml-0 font-semibold "
+              className="flex items-center gap-2 ml-2 md:ml-0 font-Syne "
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
@@ -81,16 +81,16 @@ const DistributionAccordion = () => {
         </MenuHandler>
 
         <MenuList className="hidden -mt-5  md:flex md:flex-col gap-4 bg-[#262220] text-white p-4 border-none
-        transition-transform delay-200 ">
-          <ul className="hover:text-orange-400  cursor-pointer"
-          onClick={()=>navigate('/ourServices')}> Our Services</ul>
-          <ul className="hover:text-orange-400 cursor-pointer" onClick={()=>navigate('/erp')}>SMT ERP</ul>
+        transition-transform delay-200 font-Syne ">
+          {/* <ul className="hover:text-orange-400  cursor-pointer"
+          onClick={()=>navigate('/ourServices')}> Our Services</ul> */}
+          <ul className="hover:text-orange-400 cursor-pointer" onClick={()=>navigate('/erp')}>SMT ERP for Manufacturing</ul>
           <ul className="hover:text-orange-400 cursor-pointer" onClick={()=>navigate('/dms')}> SMT DMS</ul>
           <ul className="hover:text-orange-400 cursor-pointer" onClick={()=>navigate('/crm')}> SMT CRM</ul>
-          <ul className="hover:text-orange-400 cursor-pointer" onClick={()=>navigate('/benefits')}>Benefits</ul>
+          {/* <ul className="hover:text-orange-400 cursor-pointer" onClick={()=>navigate('/benefits')}>Benefits</ul> */}
           <ul className="hover:text-orange-400"> SMT Warehouse Management</ul>
           <ul className="hover:text-orange-400"> SMT Project Management</ul>
-          <ul className="hover:text-orange-400"> Customized ERP for All Industries</ul>
+          {/* <ul className="hover:text-orange-400"> Customized ERP for All Industries</ul> */}
         </MenuList>
       </Menu>
       <div className="absolute md:hidden w-full  !border-none">

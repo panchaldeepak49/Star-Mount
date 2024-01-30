@@ -16,7 +16,14 @@ export default {
               animation: {
                 moveImages: 'moveImages 20s linear infinite', /* Adjust animation duration as needed */
               },
-
+      
+       fontFamily :{
+        DarkerGrotesque : ['Darker Grotesque','sans-serif'],
+        OpenSans : ['Open Sans','sans-serif'],
+        Syne : ['Syne','sans-serif'],
+        PlayFair : ['Playfair Display','sans-serif'],
+        ZillaSlab : ['Zilla Slab', 'serif']
+       }       
             
     },
   },

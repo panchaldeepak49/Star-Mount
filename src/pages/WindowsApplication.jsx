@@ -23,7 +23,7 @@ const WindowsApplication = () => {
 
      <div className='flex  justify-center mt-10'>
     <div className='flex flex-col items-center  bg-green-200 sm:w-[80%] rounded-xl  py-6 px-2 sm:px-10 shadow-xl
-    bg-[url("/Images/ellipse/8.png")] bg-cover hover:border-2 border-orange-400 box-content transition-transform delay-50' >
+    bg-[url("/Images/ellipse/8.png")] bg-cover border-2 hover:border-orange-400 box-content transition-transform delay-50' >
         <p className='font-semibold text-center text-orange-500 text-xl sm:text-[2rem]'>Here are some key characteristics of Windows application:</p>
           
          <div className='flex flex-col items-start text-[#383838]'>
