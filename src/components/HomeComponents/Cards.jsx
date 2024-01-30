@@ -38,7 +38,7 @@ const Cards = () => {
             <p className=' font-OpenSans px-6 text-center text-black-200'>optimize your multichain restaurant operations</p>
             
             <a href='/dms' className='flex justify-center items-center gap-2 text-red-600 font-semibold'>Learn More 
-            <MdArrowRightAlt  className={ isHovered1 ? 'absolute ml-[6%] translate-x-4 transition-transform delay-300' : 'hidden ' } />
+            <MdArrowRightAlt  className={ isHovered1 ? 'absolute ml-[20%] sm:ml-[6%] translate-x-4 transition-transform delay-300' : 'hidden ' } />
             </a>
         </div>
 
@@ -61,7 +61,7 @@ const Cards = () => {
             <p className=' font-OpenSans px-6 text-center text-black-200'>optimize your multichain restaurant operations</p>
             
             <a href='/crm' className='flex justify-center items-center gap-2 text-red-600 font-semibold'>Learn More 
-            <MdArrowRightAlt  className={ isHovered2 ? 'absolute ml-[6%] translate-x-4 transition-transform delay-300' : 'hidden ' } />
+            <MdArrowRightAlt  className={ isHovered2 ? 'absolute ml-[20%] sm:ml-[6%] translate-x-4 transition-transform delay-300' : 'hidden ' } />
             </a>
         </div>
 
@@ -85,7 +85,7 @@ const Cards = () => {
             <p className=' font-OpenSans px-6 text-center text-black-200'>optimize your multichain restaurant operations</p>
             
             <a href='/erp' className='flex justify-center items-center gap-2 text-red-600 font-semibold'>Learn More 
-            <MdArrowRightAlt  className={ isHovered3 ? 'absolute ml-[6%] translate-x-4 transition-transform delay-300' : 'hidden ' } />
+            <MdArrowRightAlt  className={ isHovered3 ? 'absolute ml-[20%] sm:ml-[6%] translate-x-4 transition-transform delay-300' : 'hidden ' } />
             </a>
         </div>
 
@@ -108,7 +108,7 @@ const Cards = () => {
             <p className=' font-OpenSans px-6 text-center text-black-200'>optimize your multichain restaurant operations</p>
             
             <a href='#' className='flex justify-center items-center gap-2 text-red-600 font-semibold'>Learn More 
-            <MdArrowRightAlt  className={ isHovered4 ? 'absolute ml-[6%] translate-x-4 transition-transform delay-300' : 'hidden ' } />
+            <MdArrowRightAlt  className={ isHovered4 ? 'absolute ml-[20%] sm:ml-[6%] translate-x-4 transition-transform delay-300' : 'hidden ' } />
             </a>
         </div>
 

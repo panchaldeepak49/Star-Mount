@@ -17,7 +17,7 @@ const Footer = () => {
 
 <div className=' mt-10 flex lg:gap-20 md:gap-16 sm:gap-10 gap-2 bg-[#221957] pt-10 pb-10 overflow-x-hidden'>
  {/* footer part-1 */}
- <div className='ml-2 sm:ml-5 md:ml-10 sm:w-[28%]'>
+ <div className='ml-2 sm:ml-5 md:ml-10 sm:w-[28%] '>
      <img src={logoImg} className='w-[30%]'></img>
      <p className='text-white sm:text-sm text-[0.3rem] sm:mt-5 mt-3'>Star Mount Technology</p>
      <p className='text-white sm:text-sm text-[0.3rem]'>Plot No.304 Kh. No.-1074,Kapashera</p>
@@ -62,13 +62,13 @@ const Footer = () => {
  </div>
  
  {/* footer part-5 */}
- <div className='mt-5 mr-4 sm:mr-0'>
-     <div className='flex sm:gap-4 gap-2'>
+ <div className='mt-5 mr-0 sm:mr-0 '>
+     <div className='flex flex-col sm:flex-row sm:gap-4 gap-2'>
      <img src={emailImg} className='sm:w-[12%] w-[9%] sm:h-[0.8rem] h-[0.5rem]'></img>
-     <p className='text-white sm:text-xs text-[0.5rem]'>anil.singh@starmounttechnology.com</p>
+     <p className='text-white sm:text-xs text-[0.5rem] '>anil.singh@starmounttechnology.com</p>
      </div>
 
-    <div className='flex sm:gap-4 gap-2 mt-2'>
+    <div className='flex flex-col sm:flex-row sm:gap-4 gap-2 mt-2'>
      <img src={phoneImg} className='sm:w-[12%] w-[9%] sm:h-[0.8rem] h-[0.5rem]'></img>
      <p className='text-white sm:text-xs text-[0.5rem] '>+91-9990300304</p>
     </div>
