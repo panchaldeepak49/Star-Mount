@@ -37,9 +37,10 @@ const Cards = () => {
             <p className='font-sans text-[1.5rem] mt-10'>SMT DMS</p>
             <p className=' font-OpenSans px-6 text-center text-black-200'>optimize your multichain restaurant operations</p>
             
-            <a href='/dms' className='flex justify-center items-center gap-2 text-red-600 font-semibold'>Learn More 
+            <p className='flex justify-center items-center gap-2 text-red-600 font-semibold cursor-pointer'
+            onClick={()=>navigate('/dms')}>Learn More 
             <MdArrowRightAlt  className={ isHovered1 ? 'absolute ml-[20%] sm:ml-[6%] translate-x-4 transition-transform delay-300' : 'hidden ' } />
-            </a>
+            </p>
         </div>
 
         </div>
@@ -60,9 +61,10 @@ const Cards = () => {
             <p className='font-sans text-[1.5rem] mt-10'>SMT CRM</p>
             <p className=' font-OpenSans px-6 text-center text-black-200'>optimize your multichain restaurant operations</p>
             
-            <a href='/crm' className='flex justify-center items-center gap-2 text-red-600 font-semibold'>Learn More 
+            <p className='flex justify-center items-center gap-2 text-red-600 font-semibold cursor-pointer'
+            onClick={()=>navigate('/crm')}>Learn More 
             <MdArrowRightAlt  className={ isHovered2 ? 'absolute ml-[20%] sm:ml-[6%] translate-x-4 transition-transform delay-300' : 'hidden ' } />
-            </a>
+            </p>
         </div>
 
         </div>
@@ -84,9 +86,10 @@ const Cards = () => {
             <p className='font-sans text-[1.5rem] mt-10'>Manufacturing</p>
             <p className=' font-OpenSans px-6 text-center text-black-200'>optimize your multichain restaurant operations</p>
             
-            <a href='/erp' className='flex justify-center items-center gap-2 text-red-600 font-semibold'>Learn More 
+            <p className='flex justify-center items-center gap-2 text-red-600 font-semibold cursor-pointer'
+            onClick={()=>navigate('/crm')}>Learn More 
             <MdArrowRightAlt  className={ isHovered3 ? 'absolute ml-[20%] sm:ml-[6%] translate-x-4 transition-transform delay-300' : 'hidden ' } />
-            </a>
+            </p>
         </div>
 
         </div>
@@ -107,9 +110,10 @@ const Cards = () => {
             <p className='font-sans text-[1.5rem] mt-10'>Warehouse</p>
             <p className=' font-OpenSans px-6 text-center text-black-200'>optimize your multichain restaurant operations</p>
             
-            <a href='#' className='flex justify-center items-center gap-2 text-red-600 font-semibold'>Learn More 
+            <p className='flex justify-center items-center gap-2 text-red-600 font-semibold cursor-pointer'
+            onClick={()=>navigate('')}>Learn More 
             <MdArrowRightAlt  className={ isHovered4 ? 'absolute ml-[20%] sm:ml-[6%] translate-x-4 transition-transform delay-300' : 'hidden ' } />
-            </a>
+            </p>
         </div>
 
         </div>

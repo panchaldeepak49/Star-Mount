@@ -10,14 +10,18 @@ import RetailAccordion from '../HomeComponents/RetailAccordion';
 import DistributionAccordion from '../HomeComponents/DistributionAccordion';
 import logoImg from "/Images/logo.png"
 import GetStartedAccordion from '../HomeComponents/GetStartedAccordion';
+import ContactForm from './ContactForm';
 
 
 const Navbar = () => {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [showModal,setShowModal] = useState(false);      //for Contact form
+
   function toggleMenu() {
     setIsMenuOpen(!isMenuOpen);
-}
+   }
+
   return (
     <>
    
@@ -46,17 +50,16 @@ const Navbar = () => {
           </li>
 
           <li className='flex items-center md:mx-2 md:py-8 py-2 px-2 font-Syne text-white sm:text-base text-xs hover:text-orange-500'>
-              <a href='#'>Contact Us</a> 
+              <a href='#' onClick={()=>setShowModal(true)}>Contact Us</a> 
           </li>
 
           <GetStartedAccordion />
-        </ul>
-
-    </nav>
-
-      </div>              
-
+        </ul> 
+       </nav>
+      </div>       
       
+             
+      <ContactForm  showModal={showModal} setShowModal={setShowModal}/>
     </>
   )
 }

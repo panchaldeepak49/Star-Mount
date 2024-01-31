@@ -34,7 +34,7 @@ const DistributionAccordion = () => {
         <ul className="hover:text-orange-400 ml-2" onClick={()=>navigate('/erp')}>ERP</ul>
         <ul className="hover:text-orange-400 ml-2 border-none" onClick={()=>navigate('/dms')}>DMS</ul>
         <ul className="hover:text-orange-400 ml-2" onClick={()=>navigate('/crm')}>CRM</ul>
-        <ul className="hover:text-orange-400 ml-2" >Warehouse</ul>
+        <ul className="hover:text-orange-400 ml-2" onClick={()=>navigate('/warehouse')} >Warehouse</ul>
         </div>
       </>
     ) 
@@ -88,7 +88,7 @@ const DistributionAccordion = () => {
           <ul className="hover:text-orange-400 cursor-pointer" onClick={()=>navigate('/dms')}> SMT DMS</ul>
           <ul className="hover:text-orange-400 cursor-pointer" onClick={()=>navigate('/crm')}> SMT CRM</ul>
           {/* <ul className="hover:text-orange-400 cursor-pointer" onClick={()=>navigate('/benefits')}>Benefits</ul> */}
-          <ul className="hover:text-orange-400"> SMT Warehouse Management</ul>
+          <ul className="hover:text-orange-400 cursor-pointer" onClick={()=>navigate('/warehouse')}> SMT Warehouse Management</ul>
           <ul className="hover:text-orange-400"> SMT Project Management</ul>
           {/* <ul className="hover:text-orange-400"> Customized ERP for All Industries</ul> */}
         </MenuList>
