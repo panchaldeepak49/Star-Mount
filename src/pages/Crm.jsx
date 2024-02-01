@@ -1,5 +1,6 @@
 import React from 'react'
-import crmImg from '/Images/crm.jpeg'
+// import crmImg from '/Images/crm.jpeg'
+import crmImg from '/Images/New2/crm1.jpeg'
 
 const Crm = () => {
   return (
@@ -11,7 +12,7 @@ const Crm = () => {
          potential customers. It's like having a digital brain for your business, helping you:
          </p>
       </div>
-     <img src={crmImg} alt="missing" className='w-[35%]'></img>
+     <img src={crmImg} alt="missing" className='w-[30%] mt-4 sm:mt-0'></img>
      </div>
 
      <div className='flex  justify-center mt-10' >

@@ -1,5 +1,6 @@
 import React from 'react'
-import mobileImg from '/Images/New folder/mobileApp.jpeg'
+//import mobileImg from '/Images/New folder/mobileApp.jpeg'
+import mobileImg from '/Images/New2/mobileApps1.jpeg'
 
 const MobileApplication = () => {
   return (

@@ -13,6 +13,7 @@ import WebApplication from '../pages/WebApplication'
 import WindowsApplication from '../pages/WindowsApplication'
 import SEO from '../pages/SEO'
 import WarehouseManagement from '../pages/WarehouseManagement'
+import ProjectManagement from '../pages/ProjectManagement'
 
 const Path = () => {
   return (
@@ -31,6 +32,7 @@ const Path = () => {
         <Route path='/windowsApplication' element={<WindowsApplication />}></Route>
         <Route path='/seo' element={<SEO />}></Route>
         <Route path='/warehouse' element={<WarehouseManagement />}></Route>
+        <Route path='/project' element={<ProjectManagement />}></Route>
      </Routes>
 
      <Footer />

@@ -1,8 +1,11 @@
 import React from 'react'
 import Button from '../GlobalComponents/Button'
-import mobileImg from '/Images/New folder/mobileApp.jpeg'
-import webImg from '/Images/New folder/webDesign1.jpeg'
+//import mobileImg from '/Images/New folder/mobileApp.jpeg'
+import mobileImg from '/Images/New2/mobileApps1.jpeg'
+// import webImg from '/Images/New folder/webDesign1.jpeg'
+import windowsImg from '/Images/New2/windowsApp.jpeg'
 import webDesignImg from '/Images/New folder/webDesign.jpeg'
+//import webDesignImg from '/Images/New2/webDesign2.jpeg'
 import seoImg from '/Images/New folder/seo.jpeg'
 import { useNavigate } from 'react-router-dom'
 
@@ -18,7 +21,7 @@ const Services = () => {
     <p className='text-center mt-6 text-xl sm:text-[2rem] font-semibold text-[#383838]'>Mobile Application</p>
     
     <div className='flex justify-center'>
-    <div className='flex flex-col sm:flex sm:flex-row sm:justify-between items-center sm:w-[70%] mt-6 '>
+    <div className='flex  flex-col sm:flex sm:flex-row sm:justify-between items-center sm:w-[70%] mt-6 '>
       <div className='sm:w-[50%] px-6 sm:px-7 bg-gradient-to-r from-orange-300 to-red-200 
        rounded-md hover:rounded-full transition-transform delay-300 ease-in'>
       <p className='mt-10 text-xs sm:text-[1rem] font-Syne  text-[#383838]'>Mobile applications or simply apps, are software programs designed 
@@ -30,7 +33,7 @@ const Services = () => {
          </div>
       </div>
 
-     <img src={mobileImg} alt="missing" className='sm:w-[30%] mt-4 sm:mt-0 hover:scale-110 transition-transform delay-50' data-aos="zoom-in"></img>
+     <img src={mobileImg} alt="missing" className='sm:w-[50%] mt-4 sm:mt-0 hover:scale-110 transition-transform delay-50 rounded-xl' data-aos="zoom-in"></img>
      </div>
      </div>
 
@@ -73,7 +76,7 @@ const Services = () => {
          </div>
       </div>
       
-     <img src={webImg} alt="missing" className='  sm:w-[40%] mt-4 sm:mt-0 hover:scale-110 transition-transform delay-50' data-aos="zoom-in"></img>
+     <img src={windowsImg} alt="missing" className='  sm:w-[30%] mt-4 sm:mt-0 hover:scale-110 transition-transform delay-50' data-aos="zoom-in"></img>
      </div>
      </div>
 

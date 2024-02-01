@@ -83,8 +83,8 @@ const RetailAccordion = () => {
           </Typography>
         </MenuHandler>
 
-        <MenuList className="hidden -mt-5  md:flex md:flex-col gap-4 bg-[#262220] text-white p-4 border-none
-        transition-transform font-Syne">
+        <MenuList className="hidden -mt-5  md:flex md:flex-col gap-2 bg-[#262220] text-white p-4 border-none
+        transition-transform font-Syne text-base">
           <ul className="hover:text-orange-400 transition-transform delay-200 hover:ease-in cursor-pointer"
           onClick={()=>navigate('/mobileApplication')}>Mobile Application</ul>
           <ul className="hover:text-orange-400 cursor-pointer" onClick={()=>navigate('/webApplication')}>Web Application</ul>

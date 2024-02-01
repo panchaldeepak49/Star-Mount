@@ -2,7 +2,7 @@ import React,{useEffect} from 'react'
 import erpImg from '/Images/erp2.jpeg'
 import sesImg from '/Images/ses.jpeg'
 import ellipse1 from '/Images/ellipse/1.png'
-import myVideo from '/Images/video.mp4'
+import myVideo from '/Images/video1.mp4'
 
 const Erp = () => {
     

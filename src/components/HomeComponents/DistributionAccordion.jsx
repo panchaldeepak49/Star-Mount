@@ -80,8 +80,8 @@ const DistributionAccordion = () => {
           </Typography>
         </MenuHandler>
 
-        <MenuList className="hidden -mt-5  md:flex md:flex-col gap-4 bg-[#262220] text-white p-4 border-none
-        transition-transform delay-200 font-Syne ">
+        <MenuList className="hidden -mt-5  md:flex md:flex-col gap-2 bg-[#262220] text-white p-4 border-none
+        transition-transform delay-200 font-Syne text-base ">
           {/* <ul className="hover:text-orange-400  cursor-pointer"
           onClick={()=>navigate('/ourServices')}> Our Services</ul> */}
           <ul className="hover:text-orange-400 cursor-pointer" onClick={()=>navigate('/erp')}>SMT ERP for Manufacturing</ul>
@@ -89,7 +89,7 @@ const DistributionAccordion = () => {
           <ul className="hover:text-orange-400 cursor-pointer" onClick={()=>navigate('/crm')}> SMT CRM</ul>
           {/* <ul className="hover:text-orange-400 cursor-pointer" onClick={()=>navigate('/benefits')}>Benefits</ul> */}
           <ul className="hover:text-orange-400 cursor-pointer" onClick={()=>navigate('/warehouse')}> SMT Warehouse Management</ul>
-          <ul className="hover:text-orange-400"> SMT Project Management</ul>
+          <ul className="hover:text-orange-400 cursor-pointer" onClick={()=>navigate('/project')}> SMT Project Management</ul>
           {/* <ul className="hover:text-orange-400"> Customized ERP for All Industries</ul> */}
         </MenuList>
       </Menu>

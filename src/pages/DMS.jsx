@@ -1,13 +1,14 @@
 import React from 'react'
-import dmsImg from '/Images/dms.jpeg'
+//import dmsImg from '/Images/dms.jpeg'
+import dmsImg from '/Images/New2/dms1.jpeg'
 import TypewriterComponent from "typewriter-effect";
 
 const DMS = () => {
   return (
     <>
     <p className='flex justify-center font-semibold text-orange-500 p-2 text-xl sm:text-[2rem]'>Streamline Your Distribution with a Powerful DMS </p>
-    <div className='flex justify-center mt-10'>
-     <img src={dmsImg} alt="missing" className='h-80'></img>
+    <div className='flex justify-center mt-6'>
+     <img src={dmsImg} alt="missing" className='h-96'></img>
      
      </div>
 

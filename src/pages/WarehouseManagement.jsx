@@ -1,8 +1,25 @@
 import React from 'react'
+import wareHouseImg from '/Images/New2/Warehouse.jpeg'
 
 const WarehouseManagement = () => {
   return (
     <>
+    <div className='flex flex-col sm:flex sm:flex-row items-center  w-full '>
+      <div className='sm:w-[60%] px-6 sm:px-36  '>
+      <p className=' font-semibold text-orange-500 text-xl sm:text-[2rem]'>What is Warehouse Management?</p>
+      <p className='mt-6 text-xs sm:text-[1rem] text-gray-800'>Warehouse Management encompasses the principles and processes 
+      involved in running the day-to-day operations of a warehouse.It involves optimizing and integrating each of 
+      those processes to ensure all aspects of a warehouse operation work together to increase productivity
+      and keep cost low. 
+         
+         </p>
+      </div>
+     <img src={wareHouseImg} alt="missing" className='w-[30%] mt-4 sm:mt-0'></img>
+     </div>
+
+
+
+
     <div className='flex justify-center'>
      <div className='flex flex-col items-start mt-10 bg-gray-200 sm:w-[70%] py-6 px-4 sm:px-4 rounded-md
      bg-[url("/Images/ellipse/6.png")] bg-cover bg-no-repeat font-Syne' data-aos="zoom-in" >

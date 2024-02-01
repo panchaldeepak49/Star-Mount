@@ -1,5 +1,6 @@
 import React from 'react'
-import webImg from '/Images/New folder/webDesign1.jpeg'
+//import webImg from '/Images/New folder/webDesign1.jpeg'
+import windowsImg from '/Images/New2/windowsApp.jpeg'
 
 const WindowsApplication = () => {
   return (
@@ -17,7 +18,7 @@ const WindowsApplication = () => {
          </p>
       </div>
 
-      <img src={webImg} alt="missing" className='mt-6 sm:mt-0 sm:w-[35%] rounded-md'></img>
+      <img src={windowsImg} alt="missing" className='mt-6 sm:mt-0 sm:w-[35%] rounded-md'></img>
      </div>
 
 

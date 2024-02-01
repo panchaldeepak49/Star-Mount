@@ -23,7 +23,7 @@ const ContactForm = ({showModal, setShowModal}) => {
     let data = JSON.stringify({
         "name": name,
         "email": email,
-        "phoneNumber":mobileNumber ,
+        "mobile_number":mobileNumber ,
         "message": query,
       });
 
@@ -53,18 +53,18 @@ const ContactForm = ({showModal, setShowModal}) => {
         }
        
        
-    //     else{
-    //       //e.preventDefault();
-    //    await userRequest.post("/admin/customer/createUser", data)
-    //       .then(() => {
-    //         message.success("User added successfully");
-    //         setShowModal(false);
-    //       })
-    //       .catch((err) => {
-    //         const errorMessage = err.response?.data?.message || "An error occurred";
-    //         message.error(errorMessage);
-    //       });}
-         };
+        else{
+          //e.preventDefault();
+       await userRequest.post("/api/smt/createContacts", data)
+          .then(() => {
+            message.success("User added successfully");
+            setShowModal(false);
+          })
+          .catch((err) => {
+            const errorMessage = err.response?.data?.message || "An error occurred";
+            message.error(errorMessage);
+          });
+    }};
 
   return (
     <>

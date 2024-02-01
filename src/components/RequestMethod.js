@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const url = "https://admin.okomo360.com/";
+//const url = "http://localhost:5000";
+const url = "https://college-backend-dwrk.onrender.com"
 
 const BASE_URL = url;
 
@@ -18,8 +19,8 @@ export const publicRequest = axios.create({
 
 export const userRequest = axios.create({
   baseURL: BASE_URL,
-  headers: {
-    "Content-Type": "application/json",
-    Authorization: "Bearer " + JSON.parse(localStorage.getItem("token")),
-  },
+  // headers: {
+  //   "Content-Type": "application/json",
+  //   Authorization: "Bearer " + JSON.parse(localStorage.getItem("token")),
+  // },
 });
