@@ -55,11 +55,13 @@ const Navbar = () => {
 
           <GetStartedAccordion />
         </ul> 
+        
        </nav>
+       <ContactForm  showModal={showModal} setShowModal={setShowModal}/>
       </div>       
       
              
-      <ContactForm  showModal={showModal} setShowModal={setShowModal}/>
+      
     </>
   )
 }

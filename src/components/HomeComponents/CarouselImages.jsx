@@ -19,7 +19,7 @@ const CarouselImages = () => {
     const NextArrow = (props) => {
         const { onClick } = props;
         return (
-            <div className="absolute top-[50%] z-50 right-10  bg-white p-2 rounded-md cursor-pointer" onClick={onClick}>
+            <div className="absolute  top-[50%] invisible sm:visible z-50 right-10  bg-white p-2 rounded-md cursor-pointer" onClick={onClick}>
                 {/* Add your forward arrow icon or any content here */}
                 <IoChevronForward />
             </div>
@@ -29,13 +29,13 @@ const CarouselImages = () => {
     const PrevArrow = (props) => {
       const { onClick } = props;
       return (
-          <div className="absolute top-[50%] z-50  left-10 bg-white p-2 rounded-md cursor-pointer" onClick={onClick}>
+          <div className="absolute  top-[50%] invisible sm:visible z-50  left-10 bg-white p-2 rounded-md cursor-pointer" onClick={onClick}>
               {/* Add your backward arrow icon or any content here */}
               <IoChevronBack />
           </div>
       );
   };
-  
+//   invisible sm:visible
       const settings = {
           autoplay: true, // Set to true if you want automatic sliding
           autoplaySpeed: 3500, // Interval in milliseconds  4000(prev)

@@ -40,3 +40,12 @@
 .read-the-docs {
   color: #888;
 } */
+* {
+  box-sizing: border-box;
+}
+
+/* Prevent horizontal overflow */
+body {
+  overflow-x: hidden;
+}
+

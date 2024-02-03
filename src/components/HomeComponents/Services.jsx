@@ -20,7 +20,7 @@ const Services = () => {
       {/* service-1 */}
     <p className='text-center mt-6 text-xl sm:text-[2rem] font-semibold text-[#383838]'>Mobile Application</p>
     
-    <div className='flex justify-center'>
+    <div className='flex justify-center px-2 sm:px-0'>
     <div className='flex  flex-col sm:flex sm:flex-row sm:justify-between items-center sm:w-[70%] mt-6 '>
       <div className='sm:w-[50%] px-6 sm:px-7 bg-gradient-to-r from-orange-300 to-red-200 
        rounded-md hover:rounded-full transition-transform delay-300 ease-in'>
@@ -39,7 +39,7 @@ const Services = () => {
 
       {/* service-2 */}
      <p className='text-center mt-10 text-xl sm:text-[2rem] font-semibold text-[#383838]'>Web Design</p>
-     <div className='flex justify-center '>
+     <div className='flex justify-center px-2 sm:px-0'>
     <div className='flex flex-col sm:flex sm:flex-row sm:justify-between items-center sm:w-[70%] mt-6 '>
     <img src={webDesignImg} alt="missing" className='sm:w-[40%] hover:scale-110 transition-transform delay-50 rounded-md' data-aos="zoom-in"></img>
 
@@ -61,7 +61,7 @@ const Services = () => {
       {/* service-3 */}
      <p className='text-center mt-10 text-xl sm:text-[2rem] font-semibold text-[#383838]'>Windows Application</p>
     
-    <div className='flex justify-center'>
+    <div className='flex justify-center px-2 sm:px-0'>
     <div className='flex flex-col sm:flex sm:flex-row sm:justify-between items-center sm:w-[70%] mt-6 '>
       <div className='sm:w-[50%] px-6 sm:px-7 bg-gradient-to-r from-orange-300 to-red-300 via-green-200 
         rounded-md hover:rounded-full transition-transform delay-300'>
@@ -82,7 +82,7 @@ const Services = () => {
 
       {/* service-4 */}
      <p className='text-center mt-10 text-xl sm:text-[2rem] font-semibold text-[#383838]'>Search Engine Optimization</p>
-     <div className='flex justify-center '>
+     <div className='flex justify-center px-2 sm:px-0'>
     <div className='flex flex-col sm:flex sm:flex-row sm:justify-between items-center sm:w-[70%] mt-6 '>
     <img src={seoImg} alt="missing" className='sm:w-[40%] hover:scale-110 transition-transform delay-50 rounded-md' data-aos="zoom-in"></img>
 

@@ -69,9 +69,9 @@ const ContactForm = ({showModal, setShowModal}) => {
   return (
     <>
     {showModal && (
-        <div className='fixed z-50 flex justify-center inset-0 top-20'>
+        <div className='fixed z-50 flex justify-center left-16 sm:inset-0 top-20 '>
         
-    <div className="bg-gradient-to-r from-blue-400 to-orange-400   w-full h-[97%]  px-5 md:w-[30%] py-5 CustomShadowColored rounded-md md:rounded-[15px]  mt-2">
+    <div className="bg-gradient-to-r from-blue-400 to-orange-400   sm:w-full sm:h-[97%]  px-5 md:w-[30%] py-5 CustomShadowColored rounded-md md:rounded-[15px]  mt-2">
         {/* {setShowModal && ( */}
           <h3
             onClick={() => setShowModal(false)}
@@ -137,7 +137,7 @@ const ContactForm = ({showModal, setShowModal}) => {
             placeholder="Query"
             value={query}
             onChange={(e)=>setQuery(e.target.value)}
-            className={` CustomShadow placeholder:text-[#515151] border-[1px] border-[#bfcbd3] w-full  outline-none p-4 rounded-[22px]  `}
+            className={` CustomShadow placeholder:text-[#515151] text-xs sm:text-[1rem] border-[1px] border-[#bfcbd3] w-full h-[10rem]  outline-none p-4 rounded-[22px]  `}
           ></textarea>
 
           {/* <ReCAPTCHA sitekey={TEST_SITE_KEY} onChange={verifiedUser} /> */}

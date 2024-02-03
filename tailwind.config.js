@@ -14,7 +14,7 @@ export default {
                 },
               },
               animation: {
-                moveImages: 'moveImages 20s linear infinite', /* Adjust animation duration as needed */
+                moveImages: 'moveImages  20s linear infinite  ', /* Adjust animation duration as needed */
               },
       
        fontFamily :{
