@@ -57,7 +57,7 @@ const ContactForm = ({showModal, setShowModal}) => {
           //e.preventDefault();
        await userRequest.post("/api/smt/createContacts", data)
           .then(() => {
-            message.success("User added successfully");
+            message.success("Thank you for contacting us.");
             setShowModal(false);
           })
           .catch((err) => {

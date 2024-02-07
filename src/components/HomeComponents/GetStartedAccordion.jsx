@@ -15,13 +15,13 @@ import {
   } from "@material-tailwind/react";
   import { ChevronDownIcon } from "@heroicons/react/24/outline";
 
-const GetStartedAccordion = () => {
+const GetStartedAccordion = ({isGetMobileMenuOpen,setIsGetMobileMenuOpen}) => {
 
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-    const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
+    
 
     const renderItems = ()=>{
-      if (!isMobileMenuOpen) {
+      if (!isGetMobileMenuOpen) {
         return null; // Don't render items if mobile menu is closed
     }
       return(
@@ -57,8 +57,8 @@ const GetStartedAccordion = () => {
           >
             <ListItem
               className="flex items-center gap-2 ml-0 md:ml-0 font-Syne bg-orange-400 hover:bg-[#525FE1] p-2 rounded-md "
-              selected={isMenuOpen || isMobileMenuOpen}
-              onClick={() => setIsMobileMenuOpen((cur) => !cur)}
+              selected={isMenuOpen || isGetMobileMenuOpen}
+              onClick={() => setIsGetMobileMenuOpen((cur) => !cur)}
             >
               Get Started
               <ChevronDownIcon
@@ -70,7 +70,7 @@ const GetStartedAccordion = () => {
               <ChevronDownIcon
                 strokeWidth={2.5}
                 className={`block h-3 w-3 transition-transform md:hidden ${
-                  isMobileMenuOpen ? "rotate-180" : ""
+                  isGetMobileMenuOpen ? "rotate-180" : ""
                 }`}
               />
             </ListItem>
@@ -86,7 +86,7 @@ const GetStartedAccordion = () => {
         </MenuList>
       </Menu>
       <div className="absolute md:hidden  !border-none">
-        <Collapse open={isMobileMenuOpen}>{renderItems()}</Collapse>
+        <Collapse open={isGetMobileMenuOpen}>{renderItems()}</Collapse>
       </div>
     </React.Fragment>
     </>

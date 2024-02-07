@@ -14,7 +14,7 @@ const MobileApplication = () => {
       life.
          </p>
       </div>
-     <img src={mobileImg} alt="missing" className='w-[35%]'></img>
+     <img src={mobileImg} alt="missing" className='sm:w-[35%]'></img>
      </div>
 
 

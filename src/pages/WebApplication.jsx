@@ -8,7 +8,7 @@ const WebApplication = () => {
     <img src={webImg} alt="missing" className='sm:w-[35%] px-10'></img>
 
       <div className='sm:w-[60%] px-6 sm:px-20'>
-      <p className=' font-semibold text-orange-500 text-xl sm:text-[2rem]'>Web Apps</p>
+      <p className='mt-4 sm:mt-0 font-semibold text-orange-500 text-xl sm:text-[2rem]'>Web Apps</p>
       <p className='mt-6 text-xs sm:text-[1rem] text-gray-800'>A web application, unlike its cousin
        the Windows application, is software you access through a web browser instead of installing directly
         on your computer. Think of it like visiting a restaurant; you don't need to bring your own kitchen

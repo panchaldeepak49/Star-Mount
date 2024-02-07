@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import { useNavigate } from 'react-router-dom';
 import {
   Navbar,
@@ -16,25 +16,40 @@ import {
 } from "@material-tailwind/react";
 import { ChevronDownIcon } from "@heroicons/react/24/outline";
 
-const DistributionAccordion = () => {
+const DistributionAccordion = ({setIsMainMenuOpen,isProductMobileMenuOpen,setIsProductMobileMenuOpen,
+  setIsServiceMobileMenuOpen,setIsGetMobileMenuOpen }) => {
 
   const navigate = useNavigate();
 
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
+  
+  useEffect(() => {
+    if (isProductMobileMenuOpen) {
+        setIsServiceMobileMenuOpen(false);
+        setIsGetMobileMenuOpen(false);
+    }
+}, [isProductMobileMenuOpen]);
+
+
+  const closeAllMenus = () =>{
+    setIsMenuOpen(false);
+    setIsProductMobileMenuOpen(false);
+    setIsMainMenuOpen(false);
+  }
 
   const renderItems = ()=>{
-    if (!isMobileMenuOpen) {
+    if (!isProductMobileMenuOpen) {
       return null; // Don't render items if mobile menu is closed
   }
     return(
     <>
       <div className='relative text-xs flex flex-col gap-2 font-semibold z-50 bg-green-400 p-2'>
         {/* <ul className="hover:text-orange-400 ml-2" onClick={()=>navigate('/ourServices')}>OurServices</ul> */}
-        <ul className="hover:text-orange-400 ml-2" onClick={()=>navigate('/erp')}>ERP</ul>
-        <ul className="hover:text-orange-400 ml-2 border-none" onClick={()=>navigate('/dms')}>DMS</ul>
-        <ul className="hover:text-orange-400 ml-2" onClick={()=>navigate('/crm')}>CRM</ul>
-        <ul className="hover:text-orange-400 ml-2" onClick={()=>navigate('/warehouse')} >Warehouse</ul>
+        <ul className="hover:text-orange-400 ml-2" onClick={()=>{navigate('/erp'); closeAllMenus();}}>ERP</ul>
+        <ul className="hover:text-orange-400 ml-2 border-none" onClick={()=>{navigate('/dms');closeAllMenus();}}>DMS</ul>
+        <ul className="hover:text-orange-400 ml-2" onClick={()=>{navigate('/crm');closeAllMenus();}}>CRM</ul>
+        <ul className="hover:text-orange-400 ml-2" onClick={()=>{navigate('/warehouse');closeAllMenus();}} >Warehouse</ul>
+        <ul className="hover:text-orange-400 ml-2" onClick={()=>{navigate('/project');closeAllMenus();}} >Project Management</ul>
         </div>
       </>
     ) 
@@ -60,8 +75,8 @@ const DistributionAccordion = () => {
           >
             <ListItem
               className="flex items-center gap-2 ml-2 md:ml-0 font-Syne "
-              selected={isMenuOpen || isMobileMenuOpen}
-              onClick={() => setIsMobileMenuOpen((cur) => !cur)}
+              selected={isMenuOpen || isProductMobileMenuOpen}
+              onClick={() => setIsProductMobileMenuOpen((cur) => !cur)}
             >
              Products
               <ChevronDownIcon
@@ -73,7 +88,7 @@ const DistributionAccordion = () => {
               <ChevronDownIcon
                 strokeWidth={2.5}
                 className={`block h-3 w-3 transition-transform md:hidden ${
-                  isMobileMenuOpen ? "rotate-180" : ""
+                  isProductMobileMenuOpen ? "rotate-180" : ""
                 }`}
               />
             </ListItem>
@@ -94,7 +109,7 @@ const DistributionAccordion = () => {
         </MenuList>
       </Menu>
       <div className="absolute md:hidden w-full  !border-none">
-        <Collapse open={isMobileMenuOpen}>{renderItems()}</Collapse>
+        <Collapse open={isProductMobileMenuOpen}>{renderItems()}</Collapse>
       </div>
     </React.Fragment>
     </>

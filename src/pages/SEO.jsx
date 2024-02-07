@@ -8,7 +8,7 @@ const SEO = () => {
     <img src={seoImg} alt="missing" className='sm:w-[35%] px-10 rounded-xl'></img>
 
       <div className='sm:w-[60%] px-6 sm:px-20'>
-      <p className=' font-semibold text-orange-500 text-xl sm:text-[2rem]'>Search Engine Optimization</p>
+      <p className='mt-4 sm:mt-0 font-semibold text-orange-500 text-xl sm:text-[2rem]'>Search Engine Optimization</p>
       <p className='mt-6 text-xs sm:text-[1rem] text-gray-800'>Imagine SEO as a ladder: it helps your website climb higher in the search engine results pages (SERPs) when people search for keywords related to your content. 
       The higher you climb, the more likely people are to discover and engage with your website.
          </p>

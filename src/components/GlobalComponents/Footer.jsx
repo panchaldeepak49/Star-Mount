@@ -65,12 +65,12 @@ const Footer = () => {
  <div className='mt-5 mr-0 sm:mr-0 '>
      <div className='flex flex-col sm:flex-row sm:gap-4 gap-2'>
      <img src={emailImg} className='sm:w-[12%] w-[9%] sm:h-[0.8rem] h-[0.5rem]'></img>
-     <p className='text-white sm:text-xs text-[0.5rem] '>anil.singh@starmounttechnology.com</p>
+     <p className='text-white sm:text-xs text-[0.5rem] '>info@starmounttechnology.com</p>
      </div>
 
     <div className='flex flex-col sm:flex-row sm:gap-4 gap-2 mt-2'>
      <img src={phoneImg} className='sm:w-[12%] w-[9%] sm:h-[0.8rem] h-[0.5rem]'></img>
-     <p className='text-white sm:text-xs text-[0.5rem] '>+91-9990300304</p>
+     <p className='text-white sm:text-xs text-[0.5rem] '></p>
     </div>
  </div>
 

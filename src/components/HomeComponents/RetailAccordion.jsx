@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import {
     Navbar,
     Collapse,
@@ -16,24 +16,36 @@ import {
   import { ChevronDownIcon } from "@heroicons/react/24/outline";
   import { useNavigate } from 'react-router-dom';
 
-const RetailAccordion = () => {
+const RetailAccordion = ({setIsMainMenuOpen,isServiceMobileMenuOpen,setIsServiceMobileMenuOpen,
+  setIsGetMobileMenuOpen}) => {
 
     const navigate = useNavigate();
 
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-    const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
+
+    useEffect(() => {
+      if (isServiceMobileMenuOpen) {
+          setIsGetMobileMenuOpen(false);
+      }
+  }, [isServiceMobileMenuOpen]);
+    
+    const closeAllMenus = () =>{
+      setIsMenuOpen(false);
+      setIsServiceMobileMenuOpen(false);
+      setIsMainMenuOpen(false);
+    }
 
     const renderItems = ()=>{
-      if (!isMobileMenuOpen) {
+      if (!isServiceMobileMenuOpen) {
         return null; // Don't render items if mobile menu is closed
     }
       return(
       <>
         <div className='relative text-xs flex flex-col gap-2 font-semibold z-50 bg-green-400 p-2'>
-          <ul className="hover:text-orange-400 ml-2" onClick={()=>navigate('/mobileApplication')}>Mobile Application</ul>
-          <ul className="hover:text-orange-400 ml-2" onClick={()=>navigate('/webApplication')}>Web Application</ul>
-          <ul className="hover:text-orange-400 ml-2 border-none" onClick={()=>navigate('/windowsApplication')}>Windows Application</ul>
-          <ul className="hover:text-orange-400 ml-2" onClick={()=>navigate('/seo')}>Search Engine Optimization</ul> 
+          <ul className="hover:text-orange-400 ml-2" onClick={()=>{navigate('/mobileApplication');closeAllMenus();}}>Mobile Application</ul>
+          <ul className="hover:text-orange-400 ml-2" onClick={()=>{navigate('/webApplication');closeAllMenus();}}>Web Application</ul>
+          <ul className="hover:text-orange-400 ml-2 border-none" onClick={()=>{navigate('/windowsApplication');closeAllMenus();}}>Windows Application</ul>
+          <ul className="hover:text-orange-400 ml-2" onClick={()=>{navigate('/seo');closeAllMenus();}}>Search Engine Optimization</ul> 
           </div>
         </>
       ) 
@@ -62,8 +74,8 @@ const RetailAccordion = () => {
           >
             <ListItem
               className="flex items-center gap-2 ml-2 md:ml-0  font-Syne "
-              selected={isMenuOpen || isMobileMenuOpen}
-              onClick={() => setIsMobileMenuOpen((cur) => !cur)}
+              selected={isMenuOpen || isServiceMobileMenuOpen}
+              onClick={() => setIsServiceMobileMenuOpen((cur) => !cur)}
               
             >
               Services
@@ -76,7 +88,7 @@ const RetailAccordion = () => {
               <ChevronDownIcon
                 strokeWidth={2.5}
                 className={`block h-3 w-3 transition-transform md:hidden ${
-                  isMobileMenuOpen ? "rotate-180" : ""
+                  isServiceMobileMenuOpen ? "rotate-180" : ""
                 }`}
               />
             </ListItem>
@@ -95,7 +107,7 @@ const RetailAccordion = () => {
         </MenuList>
       </Menu>
       <div className="absolute md:hidden  w-full  !border-none">
-        <Collapse open={isMobileMenuOpen}>{renderItems()}</Collapse>
+        <Collapse open={isServiceMobileMenuOpen}>{renderItems()}</Collapse>
       </div>
     </React.Fragment>
     </>
