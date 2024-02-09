@@ -2,8 +2,8 @@ import React,{ useState } from 'react'
 import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Img1 from '/Images/warehouse1.jpg'
-import Img2 from '/Images/warehouse2.jpg'
+import Img1 from '/Images/client1.jpg'
+import Img2 from '/Images/client2.jpg'
 import Img3 from '/Images/warehouse3.jpg'
 import erpImg from '/Images/erp.jpeg'
 import sesImg from '/Images/ses.jpeg'

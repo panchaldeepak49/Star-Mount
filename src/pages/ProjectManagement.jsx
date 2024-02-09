@@ -1,5 +1,5 @@
 import React from 'react'
-import projectImg from '/Images/New folder/projectManagement.jpeg'
+import projectImg from '/Images/New folder/projectManagement1.jpeg'
 
 const ProjectManagement = () => {
   return (
